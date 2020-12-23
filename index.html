@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SVG Awesom Page</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <header>
+      <img src="./assets/logo.png" alt="logo" />
+    </header>
+    <section>
+      <h3>D3.js fruit awesome chart</h3>
+      <h4>Fruitful spread</h4>
+    </section>
+    <section class="canvas"></section>
+    <section>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut enim
+        molestias incidunt dolore, nihil beatae iusto tempore numquam itaque
+        atque similique cum aspernatur eveniet laborum reprehenderit
+        exercitationem, quae accusantium voluptas.
+      </p>
+    </section>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-firestore.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      var firebaseConfig = {
+        apiKey: 'AIzaSyBh4awMukWgydKsnES5crtaMz7qyxB0Zv0',
+        authDomain: 'svg-project-d3.firebaseapp.com',
+        projectId: 'svg-project-d3',
+        storageBucket: 'svg-project-d3.appspot.com',
+        messagingSenderId: '742397376928',
+        appId: '1:742397376928:web:36d1b5bcfd2af890f10cc5',
+        measurementId: 'G-Y65VQSJ6CY',
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      const db = firebase.firestore();
+      db.settings({ timestampsInSnapshots: true });
+    </script>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="fruitChart.js"></script>
+  </body>
+</html>
